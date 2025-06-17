@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dammaq - Suite de Aplicaciones de Negocio</title>
+    <meta name="description" content="Potencia tu negocio con nuestras tres aplicaciones especializadas: Rep, Taller y Concilia">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>Dammaq</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#apps" class="nav-link">Aplicaciones</a></li>
+                    <li><a href="#features" class="nav-link">Características</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Potencia tu negocio con 
+                    <span class="gradient-text">Dammaq Suite</span>
+                </h1>
+                <p class="hero-description">
+                    Descubre nuestras tres aplicaciones especializadas diseñadas para optimizar 
+                    y automatizar los procesos clave de tu empresa
+                </p>
+                <div class="hero-buttons">
+                    <a href="#apps" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Explorar Apps
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Más Información
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="card-floating card-1">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-floating card-2">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="card-floating card-3">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="hero-shape-1"></div>
+            <div class="hero-shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="apps" class="apps-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Aplicaciones</h2>
+                <p class="section-description">
+                    Tres soluciones especializadas para llevar tu negocio al siguiente nivel
+                </p>
+            </div>
+            <div class="apps-grid">
+                <!-- App 1: Rep -->
+                <div class="app-card" data-app="rep">
+                    <div class="app-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="app-title">Reporte Diario de Cosecha</h3>
+                    <p class="app-description">
+                        Gestiona y optimiza tus procesos de ventas con análisis en tiempo real 
+                        y herramientas avanzadas de seguimiento
+                    </p>
+                    <ul class="app-features">
+                        <li><i class="fas fa-check"></i> Dashboard interactivo</li>
+                        <li><i class="fas fa-check"></i> Análisis de rendimiento</li>
+                        <li><i class="fas fa-check"></i> Reportes automáticos</li>
+                    </ul>
+                    <a href="https://app.rep.dammaq.cl" target="_blank" class="app-button">
+                        <span>Acceder a Rep</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- App 2: Taller -->
+                <div class="app-card featured" data-app="taller">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        Popular
+                    </div>
+                    <div class="app-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="app-title">Gestión de Taller Mecánico</h3>
+                    <p class="app-description">
+                        Administra tu taller mecánico con control total sobre inventario, 
+                        órdenes de trabajo y gestión de clientes
+                    </p>
+                    <ul class="app-features">
+                        <li><i class="fas fa-check"></i> Gestión de órdenes</li>
+                        <li><i class="fas fa-check"></i> Control de inventario</li>
+                        <li><i class="fas fa-check"></i> Seguimiento de trabajos</li>
+                    </ul>
+                    <a href="https://app.taller.dammaq.cl" target="_blank" class="app-button">
+                        <span>Acceder a Taller</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- App 3: Concilia -->
+                <div class="app-card" data-app="concilia">
+                    <div class="app-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="app-title">Conciliación Bancaria</h3>
+                    <p class="app-description">
+                        Simplifica tus procesos de conciliación bancaria y contable 
+                        con automatización inteligente
+                    </p>
+                    <ul class="app-features">
+                        <li><i class="fas fa-check"></i> Conciliación automática</li>
+                        <li><i class="fas fa-check"></i> Integración bancaria</li>
+                        <li><i class="fas fa-check"></i> Reportes financieros</li>
+                    </ul>
+                    <a href="https://app.concilia.dammaq.cl" target="_blank" class="app-button">
+                        <span>Acceder a Concilia</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegir Dammaq?</h2>
+                <p class="section-description">
+                    Características que hacen la diferencia en tu negocio
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Rápido y Eficiente</h4>
+                    <p>Optimiza tus procesos y ahorra tiempo valioso con nuestras soluciones automatizadas</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Seguro y Confiable</h4>
+                    <p>Protección de datos de nivel empresarial con respaldos automáticos</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Acceso Móvil</h4>
+                    <p>Usa nuestras aplicaciones desde cualquier dispositivo, en cualquier momento</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Soporte 24/7</h4>
+                    <p>Nuestro equipo está siempre disponible para ayudarte cuando lo necesites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">¿Listo para empezar?</h2>
+                <p class="section-description">
+                    Comienza a transformar tu negocio hoy mismo con nuestras aplicaciones
+                </p>
+                <div class="contact-buttons">
+                    <a href="https://app.rep.dammaq.cl" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Comenzar Ahora
+                    </a>
+                    <a href="mailto:contacto@dammaq.cl" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Contactar Soporte
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>Dammaq</span>
+                    </div>
+                    <p>Potenciando negocios con tecnología innovadora</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Aplicaciones</h4>
+                        <ul>
+                            <li><a href="https://app.rep.dammaq.cl" target="_blank">Reporte Diario de Cosecha</a></li>
+                            <li><a href="https://app.taller.dammaq.cl" target="_blank">Gestión de Taller Mecánico</a></li>
+                            <li><a href="https://app.concilia.dammaq.cl" target="_blank">Conciliación Bancaria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Acerca de</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <li><a href="#support">Soporte</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dammaq. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
