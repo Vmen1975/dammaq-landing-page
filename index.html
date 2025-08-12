@@ -5,212 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dammaq - Suite de Aplicaciones de Negocio</title>
     <meta name="description" content="Potencia tu negocio con nuestras tres aplicaciones especializadas: Rep, Taller y Concilia">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="font-sans text-gray-900 bg-white antialiased">
     <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>Dammaq</span>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200/20 shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">Dammaq</span>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Inicio</a></li>
-                    <li><a href="#apps" class="nav-link">Aplicaciones</a></li>
-                    <li><a href="#features" class="nav-link">Características</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#home" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative group">
+                        Inicio
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-200 group-hover:w-full"></span>
+                    </a></li>
+                    <li><a href="#apps" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative group">
+                        Aplicaciones
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-200 group-hover:w-full"></span>
+                    </a></li>
+                    <li><a href="#features" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative group">
+                        Características
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-200 group-hover:w-full"></span>
+                    </a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative group">
+                        Contacto
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-200 group-hover:w-full"></span>
+                    </a></li>
                 </ul>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600 p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Potencia tu negocio con 
-                    <span class="gradient-text">Dammaq Suite</span>
-                </h1>
-                <p class="hero-description">
-                    Descubre nuestras tres aplicaciones especializadas diseñadas para optimizar 
-                    y automatizar los procesos clave de tu empresa
-                </p>
-                <div class="hero-buttons">
-                    <a href="#apps" class="btn btn-primary">
-                        <i class="fas fa-play"></i>
-                        Explorar Apps
-                    </a>
-                    <a href="#features" class="btn btn-secondary">
-                        <i class="fas fa-info-circle"></i>
-                        Más Información
-                    </a>
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="hero-background"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="text-gray-800 space-y-8 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                        Potencia tu negocio con 
+                        <span class="text-primary-600 block mt-2">Dammaq Suite</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 font-light leading-relaxed max-w-2xl lg:mx-0 mx-auto">
+                        Descubre nuestras tres aplicaciones especializadas diseñadas para optimizar 
+                        y automatizar los procesos clave de tu empresa
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                        <a href="#apps" class="group inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg shadow-lg hover:bg-primary-700 hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-play mr-3"></i>
+                            Explorar Apps
+                        </a>
+                        <a href="#features" class="group inline-flex items-center justify-center px-8 py-4 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition-all duration-300">
+                            <i class="fas fa-info-circle mr-3"></i>
+                            Más Información
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-cards">
-                    <div class="card-floating card-1">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="card-floating card-2">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="card-floating card-3">
-                        <i class="fas fa-calculator"></i>
+                <div class="flex items-center justify-center lg:justify-end mt-12 lg:mt-0">
+                    <div class="bg-white p-6 rounded-lg shadow-2xl transition-transform duration-300">
+                        <img src="Logo_Dammaq_Madera.png" alt="Dammaq Logo" class="w-64 md:w-80 lg:w-96">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-bg">
-            <div class="hero-shape-1"></div>
-            <div class="hero-shape-2"></div>
         </div>
     </section>
 
     <!-- Applications Section -->
-    <section id="apps" class="apps-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nuestras Aplicaciones</h2>
-                <p class="section-description">
+    <section id="apps" class="py-20 lg:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 lg:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Nuestras Aplicaciones
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     Tres soluciones especializadas para llevar tu negocio al siguiente nivel
                 </p>
             </div>
-            <div class="apps-grid">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- App 1: Rep -->
-                <div class="app-card" data-app="rep">
-                    <div class="app-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="App 1 Mockup" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     </div>
-                    <h3 class="app-title">Reporte Diario de Cosecha</h3>
-                    <p class="app-description">
-                        Gestiona y optimiza tus procesos de ventas con análisis en tiempo real 
-                        y herramientas avanzadas de seguimiento
-                    </p>
-                    <ul class="app-features">
-                        <li><i class="fas fa-check"></i> Dashboard interactivo</li>
-                        <li><i class="fas fa-check"></i> Análisis de rendimiento</li>
-                        <li><i class="fas fa-check"></i> Reportes automáticos</li>
-                    </ul>
-                    <a href="https://app.rep.dammaq.cl" target="_blank" class="app-button">
-                        <span>Acceder a Rep</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Reporte Diario de Cosecha</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Gestiona y optimiza tus procesos de ventas con análisis en tiempo real.
+                        </p>
+                        <a href="https://app.rep.dammaq.cl" target="_blank" class="inline-block bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-primary-700 transition-all duration-300">
+                            Acceder a Rep
+                        </a>
+                    </div>
                 </div>
 
                 <!-- App 2: Taller -->
-                <div class="app-card featured" data-app="taller">
-                    <div class="featured-badge">
-                        <i class="fas fa-star"></i>
-                        Popular
+                <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/4488636/pexels-photo-4488636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="App 2 Mockup" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     </div>
-                    <div class="app-icon">
-                        <i class="fas fa-tools"></i>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Gestión de Taller Mecánico</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Administra tu taller mecánico con control total sobre inventario y órdenes de trabajo.
+                        </p>
+                        <a href="https://app.taller.dammaq.cl" target="_blank" class="inline-block bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-primary-700 transition-all duration-300">
+                            Acceder a Taller
+                        </a>
                     </div>
-                    <h3 class="app-title">Gestión de Taller Mecánico</h3>
-                    <p class="app-description">
-                        Administra tu taller mecánico con control total sobre inventario, 
-                        órdenes de trabajo y gestión de clientes
-                    </p>
-                    <ul class="app-features">
-                        <li><i class="fas fa-check"></i> Gestión de órdenes</li>
-                        <li><i class="fas fa-check"></i> Control de inventario</li>
-                        <li><i class="fas fa-check"></i> Seguimiento de trabajos</li>
-                    </ul>
-                    <a href="https://app.taller.dammaq.cl" target="_blank" class="app-button">
-                        <span>Acceder a Taller</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
                 </div>
 
                 <!-- App 3: Concilia -->
-                <div class="app-card" data-app="concilia">
-                    <div class="app-icon">
-                        <i class="fas fa-calculator"></i>
+                <div class="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/5980863/pexels-photo-5980863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="App 3 Mockup" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
                     </div>
-                    <h3 class="app-title">Conciliación Bancaria</h3>
-                    <p class="app-description">
-                        Simplifica tus procesos de conciliación bancaria y contable 
-                        con automatización inteligente
-                    </p>
-                    <ul class="app-features">
-                        <li><i class="fas fa-check"></i> Conciliación automática</li>
-                        <li><i class="fas fa-check"></i> Integración bancaria</li>
-                        <li><i class="fas fa-check"></i> Reportes financieros</li>
-                    </ul>
-                    <a href="https://app.concilia.dammaq.cl" target="_blank" class="app-button">
-                        <span>Acceder a Concilia</span>
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Conciliación Bancaria</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Simplifica tus procesos de conciliación bancaria y contable con automatización.
+                        </p>
+                        <a href="https://app.concilia.dammaq.cl" target="_blank" class="inline-block bg-primary-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-primary-700 transition-all duration-300">
+                            Acceder a Concilia
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">¿Por qué elegir Dammaq?</h2>
-                <p class="section-description">
+    <section id="features" class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 lg:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    ¿Por qué elegir Dammaq?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                     Características que hacen la diferencia en tu negocio
                 </p>
             </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center w-24 h-24 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="https://picsum.photos/id/20/100/100" alt="Rápido y Eficiente" class="w-full h-full object-cover">
                     </div>
-                    <h4>Rápido y Eficiente</h4>
-                    <p>Optimiza tus procesos y ahorra tiempo valioso con nuestras soluciones automatizadas</p>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Rápido y Eficiente</h4>
+                    <p class="text-gray-600 leading-relaxed">Optimiza tus procesos y ahorra tiempo valioso con nuestras soluciones automatizadas</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center w-24 h-24 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="https://picsum.photos/id/28/100/100" alt="Seguro y Confiable" class="w-full h-full object-cover">
                     </div>
-                    <h4>Seguro y Confiable</h4>
-                    <p>Protección de datos de nivel empresarial con respaldos automáticos</p>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Seguro y Confiable</h4>
+                    <p class="text-gray-600 leading-relaxed">Protección de datos de nivel empresarial con respaldos automáticos</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center w-24 h-24 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="https://picsum.photos/id/66/100/100" alt="Acceso Móvil" class="w-full h-full object-cover">
                     </div>
-                    <h4>Acceso Móvil</h4>
-                    <p>Usa nuestras aplicaciones desde cualquier dispositivo, en cualquier momento</p>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Acceso Móvil</h4>
+                    <p class="text-gray-600 leading-relaxed">Usa nuestras aplicaciones desde cualquier dispositivo, en cualquier momento</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center w-24 h-24 bg-primary-100 rounded-full mx-auto mb-6 overflow-hidden">
+                        <img src="https://picsum.photos/seed/headset/100/100" alt="Soporte 24/7" class="w-full h-full object-cover">
                     </div>
-                    <h4>Soporte 24/7</h4>
-                    <p>Nuestro equipo está siempre disponible para ayudarte cuando lo necesites</p>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Soporte 24/7</h4>
+                    <p class="text-gray-600 leading-relaxed">Nuestro equipo está siempre disponible para ayudarte cuando lo necesites</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">¿Listo para empezar?</h2>
-                <p class="section-description">
+    <section id="contact" class="py-20 lg:py-32 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    ¿Listo para empezar?
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-12">
                     Comienza a transformar tu negocio hoy mismo con nuestras aplicaciones
                 </p>
-                <div class="contact-buttons">
-                    <a href="https://app.rep.dammaq.cl" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="https://app.rep.dammaq.cl" target="_blank" class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-2xl shadow-xl hover:shadow-2xl hover:from-primary-600 hover:to-primary-700 hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-rocket mr-3 group-hover:scale-110 transition-transform"></i>
                         Comenzar Ahora
                     </a>
-                    <a href="mailto:contacto@dammaq.cl" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:contacto@dammaq.cl" class="group inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-semibold rounded-2xl border border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                        <i class="fas fa-envelope mr-3 group-hover:scale-110 transition-transform"></i>
                         Contactar Soporte
                     </a>
                 </div>
@@ -219,37 +211,31 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-rocket"></i>
-                        <span>Dammaq</span>
-                    </div>
-                    <p>Potenciando negocios con tecnología innovadora</p>
+    <footer class="bg-gray-950 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                <div class="space-y-6">
+                    <p class="text-gray-400 leading-relaxed">Potenciando negocios con tecnología innovadora</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Aplicaciones</h4>
-                        <ul>
-                            <li><a href="https://app.rep.dammaq.cl" target="_blank">Reporte Diario de Cosecha</a></li>
-                            <li><a href="https://app.taller.dammaq.cl" target="_blank">Gestión de Taller Mecánico</a></li>
-                            <li><a href="https://app.concilia.dammaq.cl" target="_blank">Conciliación Bancaria</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Empresa</h4>
-                        <ul>
-                            <li><a href="#about">Acerca de</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                            <li><a href="#support">Soporte</a></li>
-                        </ul>
-                    </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Aplicaciones</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://app.rep.dammaq.cl" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Reporte Diario de Cosecha</a></li>
+                        <li><a href="https://app.taller.dammaq.cl" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Gestión de Taller Mecánico</a></li>
+                        <li><a href="https://app.concilia.dammaq.cl" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-200">Conciliación Bancaria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Empresa</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-200">Acerca de</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contacto</a></li>
+                        <li><a href="#support" class="text-gray-400 hover:text-white transition-colors duration-200">Soporte</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Dammaq. Todos los derechos reservados.</p>
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-gray-400">&copy; 2024 Dammaq. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

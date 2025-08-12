@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #4f46e5;
+    --primary-color-light: #e0e7ff;
+}
+
+.hero-background {
+    background-image: url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.text-primary-600 {
+    color: var(--primary-color);
+}
+
+.bg-primary-100 {
+    background-color: var(--primary-color-light);
+}
+
+.bg-primary-600 {
+    background-color: var(--primary-color);
+}
+
+.bg-primary-700:hover {
+    background-color: #4338ca;
+}
